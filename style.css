@@ -1,0 +1,134 @@
+body {
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+}
+
+#header {
+    width: 100%;
+    text-align: right;
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+    height: 72px;
+    line-height: 72px;
+    background-color: #242B2E;
+}
+
+#header li {
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#header #siteName {
+    text-align: left;
+    width: 720px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#carousel {
+    width: 100%;
+    height: 540px;
+    background-image: url('https://cdn.pixabay.com/photo/2018/03/22/02/37/email-3249062_960_720.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    color: white;
+    position: relative;
+}
+
+#home,
+#IT,
+#about {
+    margin-top: 40px;
+    width: 90%;
+    margin-left: 5%;
+    box-sizing: border-box;
+    color: black;
+}
+
+#contact {
+    margin-top: 5px;
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    padding: 50px;
+}
+
+#home h1 {
+    font-size: 40px;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+#about p {
+    font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #084B8A;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #084B8A;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
